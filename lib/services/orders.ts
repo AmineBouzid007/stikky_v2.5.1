@@ -6,7 +6,7 @@
 // -----------------------------------------------------------------------------
 
 import { createClient as createBrowserSupabase } from "@/lib/supabase/client";
-import { isDatabaseConfigured } from "@/lib/services/products";
+import { isDatabaseConfigured } from "@/lib/supabase/config";
 import { createOrder as createLocalOrder } from "@/lib/local-store";
 import type { CartItem } from "@/lib/types";
 
