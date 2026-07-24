@@ -111,5 +111,5 @@ export function getCategoryMeta(type: ProductType, slug: string): CategoryMeta |
 }
 
 export function formatPrice(value: number): string {
-  return `$${value.toFixed(0)}`
+  return `${value.toFixed(0)} TND`;
 }
