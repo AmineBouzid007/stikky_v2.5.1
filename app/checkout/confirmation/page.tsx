@@ -9,7 +9,7 @@ import { FooterSection } from "@/components/landing/footer-section";
 import { Button } from "@/components/ui/button";
 import { getOrders, type LocalOrder } from "@/lib/local-store";
 import { createClient as createBrowserSupabase } from "@/lib/supabase/client";
-import { isDatabaseConfigured } from "@/lib/services/products";
+import { isDatabaseConfigured } from "@/lib/supabase/config";
 import { formatPrice } from "@/lib/products";
 
 async function fetchDatabaseOrder(orderId: string): Promise<LocalOrder | null> {
