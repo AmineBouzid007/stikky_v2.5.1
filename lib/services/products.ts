@@ -10,6 +10,8 @@
 // UI components/pages should import from here, never from
 // lib/supabase/* directly, and never run queries themselves.
 // -----------------------------------------------------------------------------
+import "server-only";
+
 
 import { createClient as createServerSupabase } from "@/lib/supabase/server";
 import * as staticCatalog from "@/lib/products";
