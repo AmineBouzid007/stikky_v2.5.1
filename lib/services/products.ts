@@ -12,7 +12,6 @@
 // -----------------------------------------------------------------------------
 import "server-only";
 
-
 import { createClient as createServerSupabase } from "@/lib/supabase/server";
 import * as staticCatalog from "@/lib/products";
 import type { CategoryMeta } from "@/lib/products";
