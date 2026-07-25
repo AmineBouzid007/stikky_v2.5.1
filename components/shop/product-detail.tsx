@@ -36,7 +36,11 @@ export function ProductDetail({ product, related }: { product: Product; related:
   const [quantity, setQuantity] = useState(1);
   const { addItem, open } = useCart();
   const categoryMeta = getCategoryMeta(product.product_type, product.category);
-  const size = product.sizes[sizeIndex];
+  const size = product.sizes?.[sizeIndex] ?? {
+  label: "",
+  dimensions: "",
+  price: 0,
+};
   const hasFrames = product.frames.length > 0;
   const frame = hasFrames ? product.frames[frameIndex] : null;
   const unitPrice = product.price + size.price + (frame?.price ?? 0);
