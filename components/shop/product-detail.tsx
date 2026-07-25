@@ -126,7 +126,7 @@ export function ProductDetail({ product, related }: { product: Product; related:
                 />
               ))}
             </div>
-            <span className="text-sm text-muted-foreground">{product.rating.toFixed(1)} · {reviews.length} reviews</span>
+            <span className="text-sm text-muted-foreground">{(product.rating ?? 5).toFixed(1)} · {reviews.length} reviews</span>
           </div>
 
           <p className="text-muted-foreground leading-relaxed mt-6 max-w-lg">{product.description}</p>
